@@ -45,6 +45,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listArreglo = new System.Windows.Forms.ListBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
+            this.btnTodo = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -172,9 +174,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnTodo);
             this.groupBox1.Location = new System.Drawing.Point(185, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(409, 236);
+            this.groupBox1.Size = new System.Drawing.Size(409, 263);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "OPERACIONES CON ARREGLOS";
@@ -193,6 +196,16 @@
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(300, 20);
             this.txtNumero.TabIndex = 16;
+            // 
+            // btnTodo
+            // 
+            this.btnTodo.Location = new System.Drawing.Point(164, 224);
+            this.btnTodo.Name = "btnTodo";
+            this.btnTodo.Size = new System.Drawing.Size(98, 23);
+            this.btnTodo.TabIndex = 0;
+            this.btnTodo.Text = "Mostrar Todo ";
+            this.btnTodo.UseVisualStyleBackColor = true;
+            this.btnTodo.Click += new System.EventHandler(this.btnTodo_Click);
             // 
             // Form1
             // 
@@ -218,6 +231,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,6 +256,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox listArreglo;
         private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Button btnTodo;
     }
 }
 

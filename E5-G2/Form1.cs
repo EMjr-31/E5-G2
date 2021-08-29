@@ -100,5 +100,14 @@ namespace E5_G2
             }
             txt4.Text = mayor.ToString();
         }
+
+        private void btnTodo_Click(object sender, EventArgs e)
+        {
+            ////asignasion para que el boton Todo ejecute los metodos de los demas botones
+            btnTodo.Click += new EventHandler(btnClick1_Click);
+            btnTodo.Click += new EventHandler(btnClick2_Click);
+            btnTodo.Click += new EventHandler(btnClick3_Click);
+            btnTodo.Click += new EventHandler(btnClick4_Click);
+        }
     }
 }
